@@ -24,7 +24,11 @@ dependencies {
 	implementation("org.flywaydb:flyway-core")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	implementation("io.jsonwebtoken:jjwt:0.2")
+	implementation("org.springframework.boot:spring-boot-starter-security")
+	implementation("com.auth0:java-jwt:3.4.0")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
+	runtimeOnly("mysql:mysql-connector-java")
 	runtimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
